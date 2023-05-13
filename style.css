@@ -157,7 +157,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   
     body {
-        background-color: hsl(0, 0%, 100%);
+        background-color:coral;
               
     }
     
@@ -166,7 +166,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         width: 100vw;
         padding: 0;
         
@@ -199,6 +199,7 @@
         font-size: 18px;
         letter-spacing: 2px;
         color: hsl(0, 1%, 44%); 
+        
         
         
     
