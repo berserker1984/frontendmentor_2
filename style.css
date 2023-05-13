@@ -7,7 +7,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   
     body {
-        background-color: hsl(0, 0%, 86%);
+        background-color:hsl(0, 0%, 94%);
               
     }
     
@@ -157,7 +157,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   
     body {
-        background-color:coral;
+        background-color:hsl(0, 0%, 94%);
               
     }
     
@@ -307,7 +307,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
     body {
-        background-color: hsl(0, 0%, 86%);
+        background-color: hsl(0, 0%, 94%);
               
     }
     
@@ -316,7 +316,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         width: 100vw;
         padding: 0;
                  
