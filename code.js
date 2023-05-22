@@ -5,9 +5,9 @@ function remover() {
     document.getElementById('days').classList.remove("animacao")
     document.getElementById('months').classList.remove("animacao")
     document.getElementById('years').classList.remove("animacao")
-    document.getElementById('daysSpan').classList.remove("animacao")
-    document.getElementById('monthsSpan').classList.remove("animacao")
-    document.getElementById('yearsSpan').classList.remove("animacao") 
+    document.getElementById('daysSpan').classList.remove("animacao2")
+    document.getElementById('monthsSpan').classList.remove("animacao2")
+    document.getElementById('yearsSpan').classList.remove("animacao2") 
 
 }
 
@@ -123,9 +123,9 @@ function verificaIdade(dia,mes,ano) {
             document.getElementById('days').classList.add("animacao")
             document.getElementById('months').classList.add("animacao")
             document.getElementById('years').classList.add("animacao")
-            document.getElementById('daysSpan').classList.add("animacao")
-            document.getElementById('monthsSpan').classList.add("animacao")
-            document.getElementById('yearsSpan').classList.add("animacao")
+            document.getElementById('daysSpan').classList.add("animacao2")
+            document.getElementById('monthsSpan').classList.add("animacao2")
+            document.getElementById('yearsSpan').classList.add("animacao2")
 
             
     
