@@ -20,20 +20,20 @@ function verificaIdade(dia,mes,ano) {
 
     
     
-    let anoRetorno =  dias / 365.25
+    let anoRetorno =  dias / 365.24
     let restoAno = anoRetorno - Math.floor(anoRetorno)
 
-    let mesesRetorno = restoAno * 12.0082 
+    let mesesRetorno = restoAno * 12
     let restoMes = mesesRetorno - Math.floor(mesesRetorno)
 
-    let diasRetorno = restoMes * 30.437   
+    let diasRetorno = restoMes * 30.43   
     
     let retornoUsu = new Array 
  
         
     if (( dia >= 1) && ( dia <= 31) && ( dia != undefined) && (dia != "")) {   
         
-        retornoUsu[0] = Math.floor(diasRetorno) 
+        retornoUsu[0] = Math.ceil(diasRetorno) 
         document.getElementById('label-dias1').style.color = "hsl(0, 1%, 44%)"
         document.getElementById('alerta-dia').style.visibility = "hidden"
         document.getElementById('dia').style.borderColor = "hsl(0, 1%, 44%)"
