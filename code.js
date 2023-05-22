@@ -1,14 +1,27 @@
 
 
 
+function remover() {
+    document.getElementById('days').classList.remove("animacao")
+    document.getElementById('months').classList.remove("animacao")
+    document.getElementById('years').classList.remove("animacao")
+    document.getElementById('daysSpan').classList.remove("animacao")
+    document.getElementById('monthsSpan').classList.remove("animacao")
+    document.getElementById('yearsSpan').classList.remove("animacao") 
+
+}
+
 function verificaIdade(dia,mes,ano) {
+
     dia = document.getElementById('dia').value
     mes = document.getElementById('mes').value
     ano = document.getElementById('ano').value
 
     
     
-   
+    
+    
+    
         
     const nascimento = `${ano}-${mes}-${dia}`
     
@@ -29,8 +42,8 @@ function verificaIdade(dia,mes,ano) {
     let diasRetorno = restoMes * 30.4375   
     
     let retornoUsu = new Array 
- 
-        
+
+            
     if (( dia >= 1) && ( dia <= 31) && ( dia != undefined) && (dia != "")) {   
         
         retornoUsu[0] = Math.ceil(diasRetorno) 
@@ -113,9 +126,7 @@ function verificaIdade(dia,mes,ano) {
             document.getElementById('daysSpan').classList.add("animacao")
             document.getElementById('monthsSpan').classList.add("animacao")
             document.getElementById('yearsSpan').classList.add("animacao")
-            
 
-              
             
     
         } else {
@@ -126,14 +137,17 @@ function verificaIdade(dia,mes,ano) {
             
         }
 
-        
-
+            
+    
     
         
         
 
     
 } 
+
+
+
 
 
 
