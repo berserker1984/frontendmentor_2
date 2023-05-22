@@ -779,13 +779,28 @@
         line-height: 75px;         
     }
 
+
+    
+    /* The animation code */
+    @keyframes example {
+        from {font-size: 30px;}
+        to {font-size: 95px;}
+    }
+
+    .animacao {
+        animation-name: example;
+        animation-duration: 1s;
+    }
+ 
+
     .caixa-numeros .label1{      
         font-size: 95px;
         color: hsl(259, 100%, 65%);
         letter-spacing: 15px;
         font-weight: 800i;
         font-family: 'Poppins', sans-serif;
-        width: auto;       
+        width: auto;  
+        transition: width 100;      
     }
 
     .caixa-numeros span{

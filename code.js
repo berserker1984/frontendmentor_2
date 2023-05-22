@@ -26,7 +26,7 @@ function verificaIdade(dia,mes,ano) {
     let mesesRetorno = restoAno * 12
     let restoMes = mesesRetorno - Math.floor(mesesRetorno)
 
-    let diasRetorno = restoMes * 30.43   
+    let diasRetorno = restoMes * 30.4375   
     
     let retornoUsu = new Array 
  
@@ -106,6 +106,14 @@ function verificaIdade(dia,mes,ano) {
             dia = document.getElementById('dia').value = ''
             mes = document.getElementById('mes').value = ''
             ano = document.getElementById('ano').value = ''
+
+            document.getElementById('days').classList.add("animacao")
+            document.getElementById('months').classList.add("animacao")
+            document.getElementById('years').classList.add("animacao")
+            document.getElementById('daysSpan').classList.add("animacao")
+            document.getElementById('monthsSpan').classList.add("animacao")
+            document.getElementById('yearsSpan').classList.add("animacao")
+            
 
               
             
