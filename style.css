@@ -4,7 +4,7 @@
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px)  {
   
     body {
         background-color: hsl(0, 0%, 94%);
@@ -328,7 +328,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px)  {
   
     body {
         background-color: hsl(0, 0%, 94%);
@@ -337,176 +337,12 @@
     
     .container {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;       
         height: 100vh;
         width: 100vw;
-        padding: 0;                
-    }
-    
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 100px;
-        background-color: hsl(0, 0%, 100%);
-        height: auto;
-        width: 100%;  
-        padding: 30px;             
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;        
-    }
-    
-    .caixa-labels label{
-        width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);
-
-    }
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-   }
-    
-    .caixa-inputs input {
-        width: 90px;
-        height: 60px;
-        border: 1px solid hsl(0, 1%, 44%);
-        border-radius: 8px;
-        padding-left: 10px;
-        font-size: 25px;
-        font-weight: 800;
-        margin-right: auto;
-        
-    }
-
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px;            
-    }
-
-    .caixa-alerta label{
-        width: 100%;       
-        font-size: 6px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
-    .caixa-img {        
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-    }
-    
-    .linha {
-        
-        border: 1px solid hsl(0, 0%, 94%);
-        width: 100%;
-        
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 80px;    
-        width: 80px;    
-        
-        
-    }
-    
-    
-    .caixa-numeros { 
-        width: 100%; 
-        height: auto;       
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;        
-    }
-
-    
-
-    .caixa-numeros .label1{  
-        font-size: 56px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: -5px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;       
-        
-        
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 56px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-    }   
-    
-   
-   
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-    
-  }
-
-
-
-
-  /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        width: 100vw;
-        padding: 0;                
+                      
     }
     
     .conteudo {
@@ -517,7 +353,8 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 180px;
         background-color: hsl(0, 0%, 100%);
-        width: 70%;  
+        width: 90%;
+        height: 700px;  
         padding: 50px;                  
     }
     
@@ -569,6 +406,173 @@
         flex-direction: row;
         justify-content: start;  
         margin-top: 10px;       
+    }
+
+    .caixa-alerta label{
+        width: 100%;        
+        font-size: 12px; 
+        color: hsl(0, 100%, 67%);
+        visibility: hidden;     
+    }
+    
+          
+    .caixa-img {        
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+    
+    .linha {
+        
+        border: 1px solid hsl(0, 0%, 94%);
+        width: 100%;
+        
+    }
+    
+    .img-arrow{
+        position: absolute;  
+        background-image: url("images/icon-arrow.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(259, 100%, 65%);
+        background-position: center;
+        border: 1px solid none;
+        border-radius: 50%;
+        height: 80px;    
+        width: 80px;    
+        
+        
+    }
+
+    .img-arrow:hover{
+        background-color:  hsl(0, 0%, 8%);
+        cursor: pointer;
+    }
+    
+    
+    .caixa-numeros {   
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        line-height: 75px;         
+    }
+
+    .caixa-numeros .label1{      
+        font-size: 90px;
+        color: hsl(259, 100%, 65%);
+        letter-spacing: 15px;
+        font-weight: 800i;
+        font-family: 'Poppins', sans-serif;
+        width: auto;       
+    }
+
+    .caixa-numeros span{
+        width: auto;
+        font-size: 90px;
+        color: hsl(0, 0%, 8%);
+        font-weight: 800i;
+        font-family: 'Poppins', sans-serif;
+        
+    }      
+   
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+    
+  }
+
+
+
+
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  
+    body {
+        background-color: hsl(0, 0%, 94%);
+        font-family: sans-serif;           
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+
+     }
+    
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 180px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 50px; 
+        height: 600px;  
+        width: 800px;               
+    }
+    
+    .caixa-labels{
+        display: flex;
+        flex-direction: row;
+        justify-content: start; 
+        width: 80%;              
+    }
+    
+    .caixa-labels label{
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: hsl(0, 1%, 44%);         
+    }
+
+    
+    
+    .caixa-inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        width: 80%; 
+    }
+
+    .caixa-inputs input {
+        width: 150px;
+        height: 70px;
+        border: 1px solid  hsl(0, 0%, 86%);
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 32px;
+        font-weight: 800;
+        margin-right: auto;        
+    }
+
+    .caixa-inputs input:hover{
+        border-color: hsl(259, 100%, 65%);
+        cursor: pointer;        
+    }
+
+    .caixa-inputs input:focus{
+        outline-color:  hsl(0, 0%, 86%);      
+    }
+
+
+    .caixa-alerta{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;  
+        margin-top: 10px; 
+        width: 80%;      
     }
 
     .caixa-alerta label{
@@ -646,10 +650,167 @@
 
 
 
+/* 
+  ##Device = mobile
+  ##Screen = 568px a 880px paisagem
+*/
 
 
+  @media (min-width: 568px) and (max-width: 880px)  {
+  
+    body {
+        background-color: hsl(0, 0%, 94%);
+        font-family: sans-serif;           
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+                   
+    }
+    
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 100px;
+        background-color: hsl(0, 0%, 100%);
+        height: auto;
+        width: 100%;  
+        padding: 30px;             
+    }
+    
+    .caixa-labels{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;        
+    }
+    
+    .caixa-labels label{
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: hsl(0, 1%, 44%);
+
+    }
+    
+    .caixa-inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+   }
+    
+    .caixa-inputs input {
+        width: 150px;
+        height: 60px;
+        border: 1px solid hsl(0, 1%, 44%);
+        border-radius: 8px;
+        padding-left: 10px;
+        font-size: 25px;
+        font-weight: 800;
+        margin-right: auto;
+        
+    }
+
+    .caixa-inputs input:hover{
+        border-color: hsl(259, 100%, 65%);
+        cursor: pointer;        
+    }
+
+    .caixa-inputs input:focus{
+        outline-color:  hsl(0, 0%, 86%);      
+    }
 
 
+    .caixa-alerta{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;  
+        margin-top: 10px;            
+    }
+
+    .caixa-alerta label{
+        width: 100%;       
+        font-size: 10px; 
+        color: hsl(0, 100%, 67%);
+        visibility: hidden;     
+    }
+    
+    .caixa-img {        
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+    
+    .linha {
+        
+        border: 1px solid hsl(0, 0%, 94%);
+        width: 100%;
+        
+    }
+    
+    .img-arrow{
+        position: absolute;  
+        background-image: url("images/icon-arrow.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(259, 100%, 65%);
+        background-position: center;
+        border: 1px solid none;
+        border-radius: 50%;
+        height: 80px;    
+        width: 80px;    
+        
+        
+    }
+    
+    
+    .caixa-numeros { 
+        width: 100%; 
+        height: auto;       
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;        
+    }
+
+    
+
+    .caixa-numeros .label1{  
+        font-size: 56px;
+        color: hsl(259, 100%, 65%);
+        letter-spacing: -5px;
+        font-weight: 800i;
+        font-family: 'Poppins', sans-serif;
+        width: auto;       
+        
+        
+    }
+
+    .caixa-numeros span{
+        width: auto;
+        font-size: 56px;
+        color: hsl(0, 0%, 8%);
+        font-weight: 800i;
+        font-family: 'Poppins', sans-serif;
+    }   
+    
+   
+   
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+    
+  }
 
 
 
