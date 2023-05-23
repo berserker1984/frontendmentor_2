@@ -663,11 +663,9 @@
     
     .container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 10px;
-        height: 700px;
+        display: grid;
+        place-items: center;
+        
 
      }
     
@@ -680,7 +678,6 @@
         border-bottom-right-radius: 180px;
         background-color: hsl(0, 0%, 100%);
         padding: 50px; 
-        height: 600px;  
         width: 800px;               
     }
     
