@@ -1,37 +1,15 @@
 
-
-
-function remover() {
-    document.getElementById('days').classList.remove("animacao")
-    document.getElementById('months').classList.remove("animacao")
-    document.getElementById('years').classList.remove("animacao")
-    document.getElementById('daysSpan').classList.remove("animacao2")
-    document.getElementById('monthsSpan').classList.remove("animacao2")
-    document.getElementById('yearsSpan').classList.remove("animacao2") 
-
-}
-
 function verificaIdade(dia,mes,ano) {
 
     dia = document.getElementById('dia').value
     mes = document.getElementById('mes').value
-    ano = document.getElementById('ano').value
-
-    
-    
-    
-    
-    
+    ano = document.getElementById('ano').value   
         
     const nascimento = `${ano}-${mes}-${dia}`
     
-    let result = Math.abs(new Date().getTime() - new Date(nascimento).getTime())
+    let result = Math.abs(new Date().getTime() - new Date(nascimento).getTime())   
 
-    
-
-    let dias = result / (1000 * 60 * 60 * 24)
-
-    
+    let dias = result / (1000 * 60 * 60 * 24)    
     
     let anoRetorno =  dias / 365.24
     let restoAno = anoRetorno - Math.floor(anoRetorno)
@@ -109,7 +87,7 @@ function verificaIdade(dia,mes,ano) {
             
             
             
-            document.getElementById('days').innerHTML = retornoUsu[0]
+            
             document.getElementById('days').style.letterSpacing = "-1px"
             document.getElementById('months').innerHTML = retornoUsu[1]
             document.getElementById('months').style.letterSpacing = "-1px"
@@ -120,14 +98,35 @@ function verificaIdade(dia,mes,ano) {
             mes = document.getElementById('mes').value = ''
             ano = document.getElementById('ano').value = ''
 
-            document.getElementById('days').classList.add("animacao")
-            document.getElementById('months').classList.add("animacao")
-            document.getElementById('years').classList.add("animacao")
-            document.getElementById('daysSpan').classList.add("animacao2")
-            document.getElementById('monthsSpan').classList.add("animacao2")
-            document.getElementById('yearsSpan').classList.add("animacao2")
+            
+            let display1 = document.querySelector("#years")
+            let display2 = document.querySelector("#months")
+            let display3 = document.querySelector("#days")
 
             
+            let y =0
+            let m =0
+            let d =0
+
+            setInterval(() => {
+                
+                if (y < retornoUsu[2]) {
+                    y += 1
+                    display1.textContent = y
+                }
+
+                if (m < retornoUsu[1]) {
+                    m += 1
+                    display2.textContent = m
+                }
+
+                if (d < retornoUsu[0]) {
+                    d += 1
+                    display3.textContent = d
+                }
+
+            }, 100);      
+     
     
         } else {
             
