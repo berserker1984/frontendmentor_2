@@ -661,12 +661,11 @@
         font-family: sans-serif;           
     }
     
-    .container {
+    .container {       
         display: flex;
-        display: grid;
-        place-items: center;
-        
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
      }
     
     .conteudo {
@@ -678,7 +677,11 @@
         border-bottom-right-radius: 180px;
         background-color: hsl(0, 0%, 100%);
         padding: 50px; 
-        width: 800px;               
+        width: 800px; 
+        height: 600px;
+        margin: 10px;
+        
+        
     }
     
     .caixa-labels{
