@@ -7,7 +7,7 @@ function verificaIdade(dia,mes,ano) {
         
     const nascimento = `${ano}-${mes}-${dia}`
     
-    let result = Math.abs(new Date().getTime() - new Date(nascimento).getTime())   
+    let result = new Date().getTime() - new Date(nascimento).getTime()
 
     let dias = result / (1000 * 60 * 60 * 24)    
     
@@ -15,16 +15,21 @@ function verificaIdade(dia,mes,ano) {
     let restoAno = anoRetorno - Math.floor(anoRetorno)
 
     let mesesRetorno = restoAno * 12
+    
     let restoMes = mesesRetorno - Math.floor(mesesRetorno)
 
-    let diasRetorno = restoMes * 30.4375   
+    let diasRetorno = Math.floor(restoMes * 30.4375)
     
     let retornoUsu = new Array 
 
+    console.log(anoRetorno)
+    console.log(mesesRetorno)
+    console.log(diasRetorno)
+
             
-    if (( dia >= 1) && ( dia <= 31) && ( dia != undefined) && (dia != "")) {   
+    if (( dia >= 0) && ( dia <= 31) && ( dia != undefined) && (dia != "")) {   
         
-        retornoUsu[0] = Math.ceil(diasRetorno) 
+        retornoUsu[0] = Math.floor(diasRetorno)
         document.getElementById('label-dias1').style.color = "hsl(0, 1%, 44%)"
         document.getElementById('alerta-dia').style.visibility = "hidden"
         document.getElementById('dia').style.borderColor = "hsl(0, 1%, 44%)"
@@ -42,7 +47,7 @@ function verificaIdade(dia,mes,ano) {
 
     if ((mes >=0) && (mes <=12)  && (mes != undefined) && (mes != ""))  {
 
-        retornoUsu[1] = Math.ceil(mesesRetorno)         
+        retornoUsu[1] = Math.floor(mesesRetorno)
         document.getElementById('label-mes2').style.color = "hsl(0, 1%, 44%)"       
         document.getElementById('alerta-mes').style.visibility = "hidden"
         document.getElementById('mes').style.borderColor = "hsl(0, 1%, 44%)"
@@ -62,7 +67,7 @@ function verificaIdade(dia,mes,ano) {
 
     if ((ano >= 0) && ( ano != undefined) && (ano != "")) {
 
-        retornoUsu[2] = Math.floor(anoRetorno) 
+        retornoUsu[2] = Math.floor(anoRetorno)
         document.getElementById('label-ano3').style.color = "hsl(0, 1%, 44%)"
         document.getElementById('alerta-ano').style.visibility = "hidden"
         document.getElementById('ano').style.borderColor = "hsl(0, 1%, 44%)"
@@ -87,7 +92,7 @@ function verificaIdade(dia,mes,ano) {
             
             
             
-            
+            document.getElementById('days').innerHTML = retornoUsu[0]
             document.getElementById('days').style.letterSpacing = "-1px"
             document.getElementById('months').innerHTML = retornoUsu[1]
             document.getElementById('months').style.letterSpacing = "-1px"
