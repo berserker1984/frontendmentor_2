@@ -18,7 +18,7 @@ function verificaIdade(dia,mes,ano) {
     
     let restoMes = mesesRetorno - Math.floor(mesesRetorno)
 
-    let diasRetorno = Math.floor(restoMes * 30.4375)
+    let diasRetorno = restoMes * 30.4375
     
     let retornoUsu = new Array 
 
