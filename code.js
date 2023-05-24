@@ -42,6 +42,7 @@ function verificaIdade(dia,mes,ano) {
         document.getElementById('label-dias1').style.color = "red"
         document.getElementById('alerta-dia').style.visibility = "visible"
         document.getElementById('dia').style.borderColor = "hsl(0, 100%, 67%)"
+        document.getElementById('dia').classList.add('cor-placeholder')
               
     }  
 
@@ -62,7 +63,8 @@ function verificaIdade(dia,mes,ano) {
         document.getElementById('months').innerHTML = '--'       
         document.getElementById('label-mes2').style.color = "red"       
         document.getElementById('alerta-mes').style.visibility = "visible"    
-        document.getElementById('mes').style.borderColor = "hsl(0, 100%, 67%)"       
+        document.getElementById('mes').style.borderColor = "hsl(0, 100%, 67%)"  
+        document.getElementById('mes').classList.add('cor-placeholder')     
     } 
 
     if ((ano >= 0) && ( ano != undefined) && (ano != "")) {
@@ -83,6 +85,7 @@ function verificaIdade(dia,mes,ano) {
         document.getElementById('label-ano3').style.color = "red"
         document.getElementById('alerta-ano').style.visibility = "visible"
         document.getElementById('ano').style.borderColor = "hsl(0, 100%, 67%)"
+        document.getElementById('ano').classList.add('cor-placeholder')
         
     } 
     

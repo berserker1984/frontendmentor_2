@@ -719,6 +719,10 @@
         margin-right: auto;        
     }
 
+    .cor-placeholder::placeholder {
+        color: hsl(0, 100%, 67%);        
+      }
+
     .caixa-inputs input:hover{
         border-color: hsl(259, 100%, 65%);
         cursor: pointer;        
